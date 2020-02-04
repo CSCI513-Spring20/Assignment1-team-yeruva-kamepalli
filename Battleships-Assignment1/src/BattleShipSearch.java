@@ -4,6 +4,7 @@
 	import java.util.Random;
 	public class BattleShipSearch {
 		
+		// Searched hoizontally row by row 
 		public void horizontalSweepStrategy(int[][] g) {	
 			System.out.println("Strategy: Horizontal sweep");
 			int boxnumber = 1;
@@ -23,7 +24,7 @@
 			
 			
 		}
-	
+	//searches randomly by picking the number randomly
 	public void randomSearchStrategy(int[][] grid) {
 		System.out.println("Strategy : Random Search ");
 		int shipscount=1;
@@ -46,6 +47,7 @@
 		System.out.println("Number of cells searched "+ boxnumber);
 		}
 	
+	//searches top bottom left right corrodinates
 	public static int Strategysearch(int[][] g1) {
 		System.out.println("Strategy: Strategic Search");
 		int count = 0;
