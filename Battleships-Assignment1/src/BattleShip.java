@@ -137,20 +137,7 @@
 							}
 						
 						}
-					/*if (temp == 1) {
-						copyArray(grid,grid1);
-					}
-					else if(temp == 2) {
-						copyArray(grid,grid2);
-					}
-					else {
-						copyArray(grid,grid3);;
-					}
-					// Clearing Grid 
-					for (int row = 0; row < grid.length; row++) {
-						   for (int col = 0; col < grid.length; col++) {
-						      grid[row][col] = 0;
-						   }*/
+					
 						}
 					temp++;
 					
