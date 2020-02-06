@@ -123,6 +123,7 @@
 							else if(temp == 3) {
 								if(i==5)
 								{
+									
 									initialsub3[0] = key1;
 									initialsub3[1] = key2;
 									
