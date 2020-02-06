@@ -14,7 +14,7 @@
 	
 		
 	   public void Shipposition()                                  
-		 {
+	   {
 			String[] initialcarrier1 = new String[10];
 			String[] endcarrier1 = new String[10];
 			String[] initialsub1 = new String[10];

@@ -20,6 +20,7 @@
 					boxnumber++;
 					}								
 			}
+			
 			System.out.println("Number of cells searched "+ boxnumber);
 			
 			
