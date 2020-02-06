@@ -163,7 +163,7 @@
 			System.out.println("Carrier found: ("+initialcarrier1[0]+","+initialcarrier1[1]+") to ("+endcarrier1[0]+","+endcarrier1[1]+")  Submarine found: (" +initialsub1[0]+","+initialsub1[1]+") to ("+endsub1[0]+","+endsub1[1]+")");
 			ships.randomSearchStrategy(g1);    // calls randon search strategy by passing the game1
 			System.out.println("Carrier found: ("+initialcarrier1[0]+","+initialcarrier1[1]+") to ("+endcarrier1[0]+","+endcarrier1[1]+")  Submarine found: (" +initialsub1[0]+","+initialsub1[1]+") to ("+endsub1[0]+","+endsub1[1]+")");
-			shipCells = ships.Strategysearch(g1); //calls strategy search by passing the game1
+			shipCells = BattleShipSearch.Strategysearch(g1); //calls strategy search by passing the game1
 			System.out.println("Number of cells searched "+ shipCells);
 			System.out.println("Carrier found: ("+initialcarrier1[0]+","+initialcarrier1[1]+") to ("+endcarrier1[0]+","+endcarrier1[1]+")  Submarine found: (" +initialsub1[0]+","+initialsub1[1]+") to ("+endsub1[0]+","+endsub1[1]+")");
 			
@@ -173,7 +173,7 @@
 			System.out.println("Carrier found: ("+initialcarrier2[0]+","+initialcarrier2[1]+") to ("+endcarrier2[0]+","+endcarrier2[1]+")  Submarine found: (" +initialsub2[0]+","+initialsub2[1]+") to ("+endsub2[0]+","+endsub2[1]+")");
 			ships.randomSearchStrategy(g2); // calls random search strategy by passing the game2
 			System.out.println("Carrier found: ("+initialcarrier2[0]+","+initialcarrier2[1]+") to ("+endcarrier2[0]+","+endcarrier2[1]+")  Submarine found: (" +initialsub2[0]+","+initialsub2[1]+") to ("+endsub2[0]+","+endsub2[1]+")");
-			shipCells = ships.Strategysearch(g2); //calls strategy search by passing the game2
+			shipCells = BattleShipSearch.Strategysearch(g2); //calls strategy search by passing the game2
 			System.out.println("Number of cells searched "+ shipCells);
 			System.out.println("Carrier found: ("+initialcarrier2[0]+","+initialcarrier2[1]+") to ("+endcarrier2[0]+","+endcarrier2[1]+")  Submarine found: (" +initialsub2[0]+","+initialsub2[1]+") to ("+endsub2[0]+","+endsub2[1]+")");
 		
@@ -184,7 +184,7 @@
 			System.out.println("Carrier found: ("+initialcarrier3[0]+","+initialcarrier3[1]+") to ("+endcarrier3[0]+","+endcarrier3[1]+")  Submarine found: (" +initialsub3[0]+","+initialsub3[1]+") to ("+endsub3[0]+","+endsub3[1]+")");
 			ships.randomSearchStrategy(g3); // calls random search strategy by passing the game3
 			System.out.println("Carrier found: ("+initialcarrier3[0]+","+initialcarrier3[1]+") to ("+endcarrier3[0]+","+endcarrier3[1]+")  Submarine found: (" +initialsub3[0]+","+initialsub3[1]+") to ("+endsub3[0]+","+endsub3[1]+")");
-			shipCells = ships.Strategysearch(g3); //calls strategy search by passing the game3
+			shipCells = BattleShipSearch.Strategysearch(g3); //calls strategy search by passing the game3
 			System.out.println("Number of cells searched "+ shipCells);
 			System.out.println("Carrier found: ("+initialcarrier3[0]+","+initialcarrier3[1]+") to ("+endcarrier3[0]+","+endcarrier3[1]+")  Submarine found: (" +initialsub3[0]+","+initialsub3[1]+") to ("+endsub3[0]+","+endsub3[1]+")");
 			

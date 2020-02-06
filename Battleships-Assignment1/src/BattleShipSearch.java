@@ -47,53 +47,45 @@
 		System.out.println("Number of cells searched "+ boxnumber);
 		}
 	
-	//searches top bottom left right corrodinates
-	public static int Strategysearch(int[][] g1) {
+	//Efficient searching technique
+	public static int Strategysearch(int[][] grid) {
 		System.out.println("Strategy: Strategic Search");
-		int count = 0;
-		int shipCells = 1;
-		for(int i=0;i<25;i++) {
-		for(int j=0;j<25;j++) {
-		if(g1[i][j] != 0) {
-		count = search(i,j,g1,count);
-		count++;
-		}
-		if(count==8) break;
-		shipCells++;
-		}
-		}
-
-		return shipCells;
-		}
-		public static int search(int i,int j,int[][] g1,int count) {
 		
-		if( i>=2 && j>=2 && i<24 && j<24) {
+		int[][] g1 = new int[25][25];
+		int carrier = 0;
+		int submarine =0;
+		int x,y;
+		Random rand =  new Random();
+		int count =0;
+		int[] carrier1 = new int[2];
+		int[] submarine1 = new int[2];
+		int boxnumber = 0;
 		
-	
-		if(g1[i][j-1] != 0) {
-		count++;
-	
-		}
-		if(g1[i][j+1] != 0) {
-		count++;
-	
-		}
-		if(g1[i+1][j-1] != 0) {
-		count++;
-	
-		}
-		if(g1[i+1][j] != 0) {
-		count++;
+	       while(count!=2) {                              //searches for submarines and carriers
+			
+			x = rand.nextInt(25);
+			y = rand.nextInt(25);
+			if(g1[x][y]!=1) {
+				g1[x][y] =1;
+				boxnumber++;
+			if (grid[x][y] == 2 & submarine == 0) {
+				submarine = 1;
+				count++;
+				submarine1[0] =x;
+				submarine1[1] =y;
+							}
+			else if(grid[x][y] == 1 & carrier == 0) {
+				carrier = 1;
+				count++;
+				carrier1 [0] =x;
+				carrier1 [1] =y;
+							}			
 		
+			}
 		}
-		if(g1[i+1][j+1] != 0) {
-		count++;
-	
-		}
-
-		}
+			
+		return boxnumber;
 		
-
-		return count;
-		}
-}
+	}
+	
+	}
